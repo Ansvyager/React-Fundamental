@@ -2,7 +2,6 @@ import React from 'react'
 import ExpenseItem from './ExpenseItem';
 import "./ExpensesList.css"
 const ExpensesList = (props) => {
-    let expenseContent = <p>No Expense Found</p>;
     if (props.items.length === 0) {
         return <h2 className="expenses-list__fallback">Found no Expenses.</h2>
     }
